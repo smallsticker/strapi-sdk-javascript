@@ -223,6 +223,7 @@ export default class Strapi {
         params
       }
     );
+    profile = authentication.user;
     this.setToken(authentication.jwt);
     return authentication;
   }
